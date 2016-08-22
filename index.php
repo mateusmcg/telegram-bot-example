@@ -25,3 +25,9 @@ try {
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     sendMessage($chatId, "Ocorreu um erro");
 }
+
+?>
+
+<h2>Telegram Bot Teste</h2>
+
+<h4>Comandos disponíveis: '/teste' e '/haha'</h4>
