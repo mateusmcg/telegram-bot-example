@@ -1,7 +1,5 @@
 <?php
 
-init_set('error_reporting', E_ALL);
-
 $botToken = "184167750:AAGEJ6DQZKW9WHwJaNUwXffBLn6izGucQ-k";
 $website = "https://api.telegram.org/bot".$botToken;
 
