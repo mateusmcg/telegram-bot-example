@@ -14,7 +14,7 @@ switch($message){
         sendMessage($chatId, "Sou um teste !"); break;
     case "/haha":
         sendMessage($chatId, "HAHAHAHAHA"); break;
-    default
+    default:
         break;
 }
 
