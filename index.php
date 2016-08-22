@@ -1,7 +1,9 @@
 <?php
 
-$botTokem = getenv('TELEGRAM-TOKEN');
-$url = "https://api.telegram.org/bot".$botTokem;
+require 'vendor/autoload.php';
+
+$botToken = "184167750:AAGEJ6DQZKW9WHwJaNUwXffBLn6izGucQ-k";
+$url = "https://api.telegram.org/bot".$botToken;
 $update = json_decode(file_get_contents('php://input'));
 
 $chatId = $update["message"]["chat"]["id"];
