@@ -1,32 +1,34 @@
 <?php
 
-require 'vendor/autoload.php';
+echo "Hello World";
 
-$botToken = "184167750:AAGEJ6DQZKW9WHwJaNUwXffBLn6izGucQ-k";
-$url = "https://api.telegram.org/bot".$botToken;
-$update = json_decode(file_get_contents('php://input'));
+// require 'vendor/autoload.php';
 
-$chatId = $update["message"]["chat"]["id"];
-$message = $update["message"]["text"];
+// $botToken = "184167750:AAGEJ6DQZKW9WHwJaNUwXffBLn6izGucQ-k";
+// $url = "https://api.telegram.org/bot".$botToken;
+// $update = json_decode(file_get_contents('php://input'));
 
-function sendMessage ($chatId, $message){
-    $url = $GLOBALS[website]."/sendMessage?chat_id=".$chatId."&text".urlencode($message);
-    file_get_contents($url);
-}
+// $chatId = $update["message"]["chat"]["id"];
+// $message = $update["message"]["text"];
 
-try {
+// function sendMessage ($chatId, $message){
+//     $url = $GLOBALS[website]."/sendMessage?chat_id=".$chatId."&text".urlencode($message);
+//     file_get_contents($url);
+// }
 
-    switch($message){
-        case "/teste":
-            sendMessage($chatId, "Sou um teste !"); break;
-        case "/haha":
-            sendMessage($chatId, "HAHAHAHAHA"); break;
-        default
-            break;
-    }
-} catch (\Zelenin\Telegram\Bot\NotOkException $e) {
-    sendMessage($chatId, "Ocorreu um erro");
-}
+// try {
+
+//     switch($message){
+//         case "/teste":
+//             sendMessage($chatId, "Sou um teste !"); break;
+//         case "/haha":
+//             sendMessage($chatId, "HAHAHAHAHA"); break;
+//         default
+//             break;
+//     }
+// } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
+//     sendMessage($chatId, "Ocorreu um erro");
+// }
 
 ?>
 
