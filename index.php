@@ -11,6 +11,9 @@ $update = json_decode($update, TRUE);
 $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 
+echo $chatId;
+echo $message;
+
 // try {
 //     switch($message){
 //         case "/teste":
